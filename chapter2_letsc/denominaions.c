@@ -1,29 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(){
-    int n;
-    printf("enter the value ");
-    scanf("%d", &n);
-    int count=0;
-    while(n>0){
-        if(n>100){
-            count++;
-            n-100;
-        }else if(n>50){
-            count++;
-            n-50;
-        }else if(n>10){
-            count++;
-            n-10;
-        }
-        else if(n>2){
-            count++;
-            n-2;
+    printf("Enter the sum ");
+    int sum,k=0;
+    scanf("%d",&sum);
+    printf("%d",sum);
+    while(sum>=0){
+        if (sum>100){
+            k++;
+            sum=sum-100;
+        }else if(sum>50){
+            k++;
+            sum =sum-50;
+        }else if(sum>10){
+            k++;
+            sum=sum-10;
+        }else if(sum>5){
+            k++;
+            sum = sum-5;
+        }else if(sum>2){
+            k++;
+            sum =sum-2;
+        }else if(sum>=1){
+            k++;
+            sum=sum-1;
         }else{
-            count++;
-            n-1;
+            break;
         }
     }
-    printf("n is %d", n);
-    printf("count is %d",count);
-    return 0;
+    printf("Minimum number of nodes required would be: %d",k);
 }

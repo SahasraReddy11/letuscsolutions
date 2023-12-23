@@ -5,15 +5,15 @@ int main(){
     scanf("%d%d%d",&a,&b,&c);
     if(a<b){
         if(a<c){
-            printf("%d is smaller",a);
+            printf("%d is younger",a);
         }else{
-            printf("%d is smaller",c);
+            printf("%d is younger",c);
         }
     }else{
         if(b<c){
-            printf("%d is smaller",b);
+            printf("%d is younger",b);
         }else{
-            printf("%d is smaller",c);
+            printf("%d is younger",c);
         }
     }
     return 0;
